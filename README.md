@@ -9,7 +9,7 @@ homepage: https://github.com/davyzhong/SkyNet
 
 # 🛰️ SkyNet · 天网
 
-![GitHub Stars](https://img.shields.io/github/stars/davyzhong/SkyNet) ![仓库最近提交时间](https://img.shields.io/github/last-commit/davyzhong/SkyNet)
+![GitHub Stars](https://img.shields.io/github/stars/davyzhong/SkyNet) ![仓库最近提交时间](https://img.shields.io/github/last-commit/davyzhong/SkyNet) ![Git Tag 版本](https://img.shields.io/github/v/tag/davyzhong/SkyNet)
 
 **让 [企业] 在 [数据驱动决策] 中 [通过多源抓取 + Agent 推送 + 异常监控完成指标治理]**
 
