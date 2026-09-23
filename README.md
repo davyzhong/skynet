@@ -9,14 +9,16 @@ homepage: https://github.com/davyzhong/SkyNet
 
 # 🛰️ SkyNet · 天网
 
+![GitHub Stars](https://img.shields.io/github/stars/davyzhong/SkyNet) ![仓库最近提交时间](https://img.shields.io/github/last-commit/davyzhong/SkyNet)
+
 **让 [企业] 在 [数据驱动决策] 中 [通过多源抓取 + Agent 推送 + 异常监控完成指标治理]**
 
-[![CI](https://img.shields.io/badge/CI-wip-lightgrey.svg)](#-开发状态)
-[![Python](https://img.shields.io/badge/Python-3.11%2B-3776ab.svg)](https://www.python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.109%2B-009688.svg)](https://fastapi.tiangolo.com)
-[![Polars](https://img.shields.io/badge/Polars-0.20%2B-blue.svg)](https://pola.rs)
+[![CI workflow 状态](https://img.shields.io/badge/CI-wip-lightgrey.svg)](#-开发状态)
+[![Python 版本](https://img.shields.io/badge/Python-3.11%2B-3776ab.svg)](https://www.python.org)
+[![FastAPI 框架](https://img.shields.io/badge/FastAPI-0.109%2B-009688.svg)](https://fastapi.tiangolo.com)
+[![Polars 数据框架](https://img.shields.io/badge/Polars-0.20%2B-blue.svg)](https://pola.rs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/status-early%20dev-orange.svg)](#-开发状态)
+[![Status 早期状态](https://img.shields.io/badge/status-early%20dev-orange.svg)](#-开发状态)
 
 [📖 架构设计](docs/superpowers/specs/2026-03-18-skynet-architecture-design.md) · [🤝 贡献](.github/CONTRIBUTING.md) · [🐛 Issues](https://github.com/davyzhong/SkyNet/issues)
 
