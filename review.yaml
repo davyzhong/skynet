@@ -14,12 +14,12 @@ specVersion: 3.0.0-alpha.0
 reviews:
   # T01 视觉锤：后端服务无品牌视觉资产时用架构图兜底
   - id: T01
-    score: 3
+    score: 4
     reason: >-
-      标题 + tagline + badge 矩阵齐备，并以架构链接与分层说明补足信息密度。
-      扣 2 分：首屏没有任何视觉资产（无架构图、无流程图、无 Swagger 截图），
-      后端服务读者需要在纯文字中自行想象系统形态。
-      修正方向：把 07 设计分层或 Swagger UI 截图放进首屏。
+      标题 + tagline + badge 矩阵齐备，且首屏已放入完整的采集层→存储→指标→报表→Agent
+      推送 mermaid 架构图（含 Celery 任务调度的虚线依赖），读者不必翻到中段即可理解系统形态。
+      扣 1 分：仍无真实运行截图（Swagger UI 或终端输出）；
+      纯后端服务的架构图已能替代大部分视觉说明作用。
     evidence: [logo-tagline]
 
   # T02 三秒价值主张

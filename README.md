@@ -28,6 +28,26 @@ homepage: https://github.com/davyzhong/SkyNet
 
 ---
 
+```mermaid
+flowchart TB
+    subgraph 采集层
+        S1[数据源 1] --> I[ingestion]
+        S2[数据源 2] --> I
+        S3[数据源 3] --> I
+    end
+    I --> ST[(storage<br/>Postgres + Redis)]
+    ST --> M[metrics<br/>指标建模]
+    M --> R[reports<br/>报表生成]
+    R --> A[agents<br/>Agent 推送/异常监控]
+    A -->|推送/告警| U[业务用户]
+    subgraph 任务调度
+        T[tasks<br/>Celery Worker]
+    end
+    T -.-> I
+    T -.-> M
+    T -.-> R
+```
+
 ## 这是什么
 
 **天网（SkyNet）** 是一个企业数据智能平台。它从多源异构数据中持续抓取、按业务维度构建指标体系、生成数据洞察报表，并通过 AI Agent 完成数据推送与异常监控。
@@ -51,25 +71,8 @@ homepage: https://github.com/davyzhong/SkyNet
 
 ## 🏗️ 架构
 
-```mermaid
-flowchart TB
-    subgraph 采集层
-        S1[数据源 1] --> I[ingestion]
-        S2[数据源 2] --> I
-        S3[数据源 3] --> I
-    end
-    I --> ST[(storage<br/>Postgres + Redis)]
-    ST --> M[metrics<br/>指标建模]
-    M --> R[reports<br/>报表生成]
-    R --> A[agents<br/>Agent 推送/异常监控]
-    A -->|推送/告警| U[业务用户]
-    subgraph 任务调度
-        T[tasks<br/>Celery Worker]
-    end
-    T -.-> I
-    T -.-> M
-    T -.-> R
-```
+（见下方「架构」章节）
+
 
 | 模块 | 职责 |
 |---|---|
