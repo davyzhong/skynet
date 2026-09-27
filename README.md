@@ -22,6 +22,8 @@ homepage: https://github.com/davyzhong/SkyNet
 
 [📖 架构设计](docs/superpowers/specs/2026-03-18-skynet-architecture-design.md) · [🤝 贡献](.github/CONTRIBUTING.md) · [🐛 Issues](https://github.com/davyzhong/SkyNet/issues)
 
+**Languages / 语言**: 简体中文（默认，面向企业内部中文团队）。英文版暂未提供，欢迎 PR 补充 `README.en.md`。
+
 </div>
 
 ---
@@ -107,6 +109,12 @@ uvicorn app.main:app --reload
 ```
 
 打开 [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) 查看 Swagger UI。
+
+确认服务已就绪（返回 `{"status":"healthy"}` 即启动成功）：
+
+```bash
+curl -s http://127.0.0.1:8000/health
+```
 
 ### 启动 Worker（Celery）
 
